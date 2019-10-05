@@ -45,7 +45,7 @@ ul {
   font-size: 120%;
   display: inline;
   border-left: 30px solid #484848;
-  height: auto;
+  height: 55px;
   margin-left: -10px;
   display: flex;
 }
@@ -61,6 +61,7 @@ li {
 }
 li:hover  {
   background: #606060;
+  cursor: pointer;
 }
 li:first-child {
   margin-left: -40px;
@@ -70,14 +71,54 @@ li:last-child {
   border-right: none;
   border-left: 2px solid white;
 }
+/* DROPDOWN MENU */
 #nav-contact {
   margin-left: auto;
+  overflow: hidden;
+  z-index: 1;
 }
+#dropdown-button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  text-align: center;
+  margin: inherit;
+}
+#dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  top: 55px;
+  right: 10px;
+}
+#dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #303030;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid black;
+}
+#dropdown-button:hover {
+  cursor: pointer;
+}
+#nav-contact:hover #dropdown-content {
+  display: block;
+}
+#dropdown-content a:hover {
+  background-color: #D3D3D3;
+}
+/* DROPDOWN MENU END */
 #nav-contact:hover {
   background: #505050;
+  cursor: pointer;
 }
-/* BARRE DE NAVIGATION */
-/* PARCOURS */
+/* BARRE DE NAVIGATION END*/
+/* PARCOURS BEGIN*/
 #parcours {
   height: 3000px;
   width: 100%;
