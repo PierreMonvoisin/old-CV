@@ -16,14 +16,31 @@ html, body {
 }
 /* PAGE D'ACCUEIL BEGIN*/
 #header {
-  height: 100%;
+  min-height: 100%;
   max-width: 100%;
   margin-bottom: -20px;
+  display: flex;
   /* PARALAX */
   background-image: url('../img/accueil.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#header-block {
+  font-family: "PantonNarrowLight";
+  position: fixed;
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  background: rgb(59,59,59);
+  background: linear-gradient(to top, #b5bdc8 0%,#828c95 36%,#28343b 100%);
+  color: white;
+  font-size: 80%;
+  bottom: 60px;
+  right: 75px;
+  padding: 20px;
+  border-top: 10px solid #202020;
+  border-radius: 10px;
 }
 /* PAGE D'ACCUEIL END*/
 /* BARRE DE NAVIGATION BEGIN*/
@@ -100,13 +117,14 @@ li:last-child {
   right: 10px;
   border: 1px solid black;
   border-top: none;
+  box-shadow: 5px 5px 10px 2px #404040;
 }
 #dropdown-content a {
   display: block;
   text-decoration: none;
   background-color: #f0f0f0;
   color: #303030;
-  padding: 12px 16px;
+  padding: 10px;
   border-bottom: 1px solid black;
 }
 #dropdown-content:last-child {
