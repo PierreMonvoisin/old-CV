@@ -6,6 +6,10 @@ html, body {
   max-width: 100%;
   margin: 0;
 }
+section {
+  width: 100%;
+  height: auto;
+}
 @font-face {
   font-family: "PantonNarrowBlack";
   src: url(../fonts/PantonNarrowDemo-Black.otf) format("opentype");
@@ -38,8 +42,8 @@ html, body {
   font-size: 80%;
   bottom: 60px;
   right: 75px;
-  padding: 20px;
-  border-top: 10px solid #202020;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
 }
 /* PAGE D'ACCUEIL END*/
@@ -73,12 +77,15 @@ ul {
 li {
   width: 150px;
   text-align: center;
-  text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 9px;
   padding-bottom: 15px;
   border-right: 2px solid white;
+}
+li a {
+  text-decoration: none;
+  color: inherit;
 }
 li:hover  {
   background: #606060;
@@ -87,6 +94,10 @@ li:hover  {
 li:first-child {
   margin-left: -40px;
   border-left: 2px solid white;
+}
+.nav-button-size {
+  height: 100%;
+  width: 100%;
 }
 #checkbox-label {
   margin-left: auto;
@@ -103,7 +114,6 @@ input:checked ~ #dropdown-content {
   margin-left: auto;
   overflow: hidden;
   width: 50px;
-
 }
 #dropdown-button {
   margin-top: -8px;
@@ -136,12 +146,6 @@ input:checked ~ #dropdown-content {
   padding: 10px;
   border-bottom: 1px solid black;
 }
-#dropdown-button {
-
-  /* margin-top: -20px;
-  font-size: 250%; */
-
-}
 #dropdown-content:last-child {
   border-bottom: none;
 }
@@ -159,8 +163,29 @@ input:checked ~ #dropdown-content {
 /* BARRE DE NAVIGATION END*/
 /* PARCOURS BEGIN*/
 #parcours {
-  height: 3000px;
+  height: 1000px;
   width: 100%;
   background: #f8f8f8;
 }
-/* PARCOURS */
+/* PARCOURS END*/
+/* COMPTETENCES BEGIN*/
+#competences {
+  height: 1000px;
+  width: 100%;
+  background: #f0f0f0;
+}
+/* COMPTETENCES END*/
+/* PROJET BEGIN*/
+#projet {
+  height: 1000px;
+  width: 100%;
+  background: #f8f8f8;
+}
+/* PROJET END*/
+/* CONTACT BEGIN*/
+#contact {
+  height: 1000px;
+  width: 100%;
+  background: #f0f0f0;
+}
+/* CONTACT END*/
