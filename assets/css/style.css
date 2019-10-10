@@ -11,6 +11,14 @@ section {
   height: auto;
 }
 @font-face {
+  font-family: "CodeDemoBold";
+  src: url(../fonts/CodeDemo-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "CodeDemoLight";
+  src: url(../fonts/CodeDemo-Light.otf) format("opentype");
+}
+@font-face {
   font-family: "PantonNarrowBlack";
   src: url(../fonts/PantonNarrowDemo-Black.otf) format("opentype");
 }
@@ -45,6 +53,11 @@ section {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
+}
+#header > p {
+  font-family: "CodeDemoBold";
+  margin: auto;
+  font-size: 70px;
 }
 /* PAGE D'ACCUEIL END*/
 /* BARRE DE NAVIGATION BEGIN*/
