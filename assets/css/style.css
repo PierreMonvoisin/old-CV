@@ -48,12 +48,12 @@ section {
 }
 /* PAGE D'ACCUEIL END*/
 /* BARRE DE NAVIGATION BEGIN*/
-div#container-nav {
+#container-nav {
   background: transparent;
   position: sticky;
   top: 0;
 }
-div#nav {
+#nav {
   background: transparent;
   height: auto;
   width: 100%;
@@ -61,7 +61,7 @@ div#nav {
   position: sticky;
   top: 0;
 }
-ul {
+#nav ul {
   font-family: "PantonNarrowBlack";
   list-style-type: none;
   overflow: hidden;
@@ -74,7 +74,7 @@ ul {
   border-left: 30px solid #484848;
   margin-left: -10px;
 }
-li {
+.li-nav {
   width: 150px;
   text-align: center;
   padding-left: 10px;
@@ -83,15 +83,15 @@ li {
   padding-bottom: 15px;
   border-right: 2px solid white;
 }
-li a {
+.li-nav a {
   text-decoration: none;
   color: inherit;
 }
-li:hover  {
+.li-nav:hover  {
   background: #606060;
   cursor: pointer;
 }
-li:first-child {
+.li-nav:first-child {
   margin-left: -40px;
   border-left: 2px solid white;
 }
